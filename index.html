@@ -1,0 +1,25 @@
+<title>Counter</title>
+
+<input
+    type="text"
+    disabled
+>
+<button>+</button>
+
+<script>
+    const $input=document.querySelector('input');
+    const $button=document.querySelector('button');
+
+$button.addEventListener('click', function () {
+
+const $pole=document.querySelector('input');
+
+
+let val=Number($pole.value);
+
+if (Number.isNaN(val)) 
+    {$pole.value=0;}
+else
+    {$pole.value =++val;}
+});
+</script>
